@@ -1,0 +1,53 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary-darkest);
+    width: 66px;
+    height: 100vh;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, .16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo__icon {
+    margin: 11px 15px 4px 15px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../assets/icon/QLTS-Icon-16x16.ico);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Btn Icon Sidebar */
+.sidebar__btn-group {
+    margin-top: 10px;
+}
+
+.sidebar__btn {
+    opacity: .2;
+    border-radius: 6px;
+    width: 44px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+}
+
+
+.sidebar__btn:hover {
+    opacity: 1;
+    background-color: var(--color-primary-dark);
+}
+
+.sidebar__btn:active,
+.sidebar__btn:focus {
+    opacity: 1;
+    background-color: var(--color-primary-light);
+}

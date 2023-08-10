@@ -1,0 +1,86 @@
+@import url(./containers/input.css);
+@import url(./containers/button.css);
+@import url(./containers/icon.css);
+@import url(./containers/dropdown.css);
+
+@import url(../layouts/header.css);
+@import url(../layouts/sidebar.css);
+@import url(../layouts/container.css);
+
+/* Font chữ dùng trong trang web */
+@font-face {
+    font-family: Misa Fonts1;
+    src: url(../assets/dist/05a65153efe56028d343c10b53faa583.ttf)
+}
+
+@font-face {
+    font-family: Misa Fonts2;
+    src: url(../assets/dist/10182c3e4e1cdcfd93ba19610e97c790.eot)
+}
+@font-face {
+    font-family: Misa Fonts3;
+    src: url(../assets/dist/29c95c2d68c76de3ee30f7b2c0220da9.ttf)
+}
+@font-face {
+    font-family: Misa Fonts4;
+    src: url(../assets/dist/54fbc883d110b217f19a4cfe3898979d.woff)
+}
+
+@font-face {
+    font-family: Misa Fonts5;
+    src: url(../assets/dist/5bf5f8dab6f35fab3ae560d8cc2923b8.woff)
+}
+
+@font-face {
+    font-family: Misa Fonts6;
+    src: url(../assets/dist/86035194a2ecaec2e33d6deae8ecf2ab.eot)
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+    font-family: Misa Fonts2;
+    font-size: 13px;
+    line-height: 15px;
+    overflow: hidden;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+/* Định nghĩa các biến chính*/
+:root {
+    --color-primary: #007AFF;
+    --color-primary-darkest:#003166;
+    --color-primary-dark: #004999;
+    --color-primary-light: #3395FF;
+    --color-primary-lightest: #66AFFF;
+    --color-primary-blur: #9fccfd;
+    --color-error: #E60000;
+    --color-text: #001031;
+    --border-color: #afafaf;
+    --border-color-hover: #afafaf;
+    --height-default: 36px;
+    --sidebar-width: 66px;
+    --header-height: 44px;
+    --space-default: 20px;
+}
+
+/* Common class */
+.relative {
+    position: relative;
+}
+

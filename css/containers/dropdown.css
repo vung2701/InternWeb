@@ -1,0 +1,39 @@
+/* Select box css */
+.select-box {
+    width: 220px;
+}
+.select-box__header {
+    height: var(--height-default);
+    font-size: 14px;
+    outline: none;
+    border-radius: 2.5px;
+    border: 1px solid var(--border-color);
+    padding: 10px 0 10px 14px;
+}
+
+/* Selectbox has icon */
+.select-box__header.has-icon,
+.select-box__list.has-icon .select-box__item {
+    padding-left: 38px;
+}
+
+
+/* Select list */
+.select-box__list {
+    border-radius: 2.5px;
+    padding: 4px 4px 4px 0;
+    box-shadow: inset 1px 2px 6px rgba(0, 0, 0, .2);
+    height: 180px;
+    overflow-y: auto;
+}
+
+.select-box__item {
+    height: var(--height-default);
+    font-size: 14px;
+    padding: 10px 0 10px 14px;
+    border-radius: 2.5px;
+}
+
+.select-box__item:hover {
+    background-color: var(--color-primary-blur);
+}

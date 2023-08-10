@@ -1,0 +1,47 @@
+/* Common input Css*/
+.input {
+    min-width: 180px;
+    height: var(--height-default);
+    font-size: 14px;
+    outline: none;
+    border-radius: 2.5px;
+    border: 1px solid var(--border-color);
+    padding: 10px 0 10px 12px;
+}
+.input:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.input::placeholder {
+    font-style: italic;
+}
+
+.input:hover {
+    border-color: var(--color-primary);
+}
+
+.input:active {
+    border-color: var(--border-color-active);
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+}
+
+.input::selection {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.input.error {
+    border-color: var(--color-error);
+}
+
+/* Input has Icon */
+.input.has-icon {
+    padding-left: 38px;
+}
+
+
+

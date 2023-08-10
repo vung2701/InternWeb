@@ -1,0 +1,6 @@
+.container {
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100vh - var(--header-height));
+    margin-left: var(--sidebar-width);
+    background-color: aqua;
+}

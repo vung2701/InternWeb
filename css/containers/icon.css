@@ -1,0 +1,47 @@
+.wrapper-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-icon {
+    position: absolute;
+    top: 6px;
+    left: 7px;
+}
+
+.right-icon {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+}
+
+/* Các loại icon */
+.icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -287px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+.tv-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -21px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.up-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -28px -338px;
+	width: 8px;
+	height: 5px;
+}
+
+.down-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -72px -338px;
+	width: 8px;
+	height: 5px;
+}
+
+
+
