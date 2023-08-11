@@ -8,44 +8,44 @@
 </head>
 <body>
     <div class="app">
+
         <!-- Header -->
         <header class="header">
 
-            <!-- Header Left-->
             <div class="header-left">
                 <h2 class="header-left__text">Danh sách tài sản</h2>
             </div>
 
-        <!-- Header right -->
+            <!-- Header right -->
             <div class="header-right">
                 <div class="header-right__text">Sở tài chính</div>
 
                 <div class="header-right__numeric">
                     <label>Năm</label>
                     <span class="header-right__numeric-value">2014</span>
-                    <div class="up-down-icon">
+                    <div class="up-down-btn">
                         <div class="up-icon"></div>
                         <div class="down-icon"></div>
                     </div>
                 </div>
                 
                 <div class="header-right__btn-group">
-                    <button class="btn btn-icon not-outline">
+                    <button class="btn btn-icon not-effect">
                         <div class="wrapper-icon">
                             <div class="icon"></div>
                         </div>
                     </button>   
-                    <button class="btn btn-icon not-outline">
+                    <button class="btn btn-icon not-effect">
                         <div class="wrapper-icon">
                             <div class="icon"></div>
                         </div>
                     </button>
-                    <button class="btn btn-icon not-outline">
+                    <button class="btn btn-icon not-effect">
                         <div class="wrapper-icon">
                             <div class="icon"></div>
                         </div>
                     </button>
-                    <button class="btn btn-icon not-outline">
+                    <button class="btn btn-icon not-effect">
                         <div class="wrapper-icon">
                             <div class="icon"></div>
                         </div>
@@ -60,7 +60,7 @@
 
             <!-- Logo -->
             <div id="logo">
-                <div class="logo__icon"></div>
+                <div class="logo-icon"></div>
             </div>
 
             <!-- Sidebar Group -->
@@ -103,10 +103,669 @@
             </div>
         </div>
 
-
-
+        <!-- Container -->
         <div class="container">
 
+            <!-- toolbar -->
+            <div class="toolbar">
+                <!-- toolbar Left -->
+                <div class="toolbar-left">
+                    <div class="toolbar-left__search relative">
+                        <input class="input has-icon" type="text" placeholder="Tìm kiếm tài sản">
+                        <div class="wrapper-icon left-icon">
+                            <div class="icon"></div>
+                        </div>
+                    </div>
+
+                    <div class="toolbar-left__select select-box relative">
+                        <div class="select-box__header input has-icon relative" tabindex="1">
+                            <div class="wrapper-icon left-icon">
+                                <div class="icon"></div>
+                            </div>
+                            Loại sản phẩm
+                            <div class="wrapper-icon right-icon">
+                                <div class="down-icon"></div>
+                            </div>
+                        </div>
+
+                        <ul class="select-box__list has-icon">
+                            <li class="select-box__item">
+                                Laptop
+                            </li>
+                            <li class="select-box__item">
+                                Tiền mặt
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="toolbar-left__select select-box relative">
+                        <div class="select-box__header input has-icon relative" tabindex="1">
+                            <div class="wrapper-icon left-icon">
+                                <div class="icon"></div>
+                            </div>
+                            Bộ phận sử dụng
+                            <div class="wrapper-icon right-icon">
+                                <div class="down-icon"></div>
+                            </div>
+                        </div>
+
+                        <ul class="select-box__list has-icon">
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                            <li class="select-box__item">
+                                Item 1
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <!-- toolbar right -->
+                <div class="toolbar-right">
+                    <button class="btn btn-main has-icon">+ Thêm tài sản</button>
+                    <button class="btn btn-icon">
+                        <div class="wrapper-icon">
+                            <div class="icon"></div>
+                        </div>
+                    </button>
+                    <button class="btn btn-icon">
+                        <div class="wrapper-icon">
+                            <div class="icon"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container">
+                <table class="table">
+                    <thead class="table-header">
+                        <tr class="table-header__row">
+                            <th class="table-header__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </th>
+                            <th class="table-header__item">STT</th>
+                            <th class="table-header__item" colspan="3">Mã tài sản</th>
+                            <th class="table-header__item" colspan="3">Tên tài sản</th>
+                            <th class="table-header__item" colspan="3">Loại tài sản</th>
+                            <th class="table-header__item" colspan="3">Bộ phận sử dụng</th>
+                            <th class="table-header__item text-right" colspan="2">Số lượng</th>
+                            <th class="table-header__item text-right" colspan="2">Nguyên giá</th>
+                            <th title="HM/KH lũy kế" class="table-header__item text-right" colspan="2">
+                                HM/KH lũy kế
+                            </th>
+                            <th class="table-header__item text-right" colspan="2">Giá trị còn lại</th>
+                            <th class="table-header__item text-center" colspan="2">Chức năng</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody class="table-body">
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-body__row">
+                            <td class="table-body__item has-checkbox">
+                                <input class="table-checkbox" type="checkbox">
+                            </td>
+                            <td class="table-body__item pl-8">1</td>
+                            <td class="table-body__item" colspan="3">MXT2351625361523</td>
+                            <td class="table-body__item" colspan="3">Dell Insprison 5436</td>
+                            <td class="table-body__item" colspan="3">Máy vi tính xách tay</td>
+                            <td class="table-body__item" colspan="3">Phòng hành chính kế toán</td>
+                            <td class="table-body__item text-right" colspan="2">1</td>
+                            <td class="table-body__item text-right" colspan="2">20.000.000</td>
+                            <td class="table-body__item text-right" colspan="2">900.000</td>
+                            <td class="table-body__item text-right" colspan="2">19.100.000</td>
+                            <td class="table-body__item text-center" colspan="2">
+                                <div class="table-body__actions">
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                    <button class="btn btn-icon not-effect">
+                                        <div class="wrapper-icon">
+                                            <div class="icon"></div>
+                                        </div>
+                                    </button> 
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                    <tfoot class="table-footer">
+                        <tr class="table-footer__row">
+                            <!--  Table footer left-->
+                            <td class="table-footer__item" colspan="14">
+                                <div class="table-footer__left">
+                                    <div class="total-notify">Tổng số: <strong>200</strong> bản ghi</div>
+                                    <button class="total-btn">
+                                        <span>20</span>
+                                        <div class="wrapper-icon">
+                                            <div class="down-icon"></div>
+                                        </div>
+                                    </button>
+
+                                    <div class="pagination">
+                                        <button class="pagination-btn">&lt;</button>
+                                        <button class="pagination-btn">1</button>
+                                        <button class="pagination-btn">2</button>
+                                        <button class="pagination-btn">...</button>
+                                        <button class="pagination-btn">10</button>
+                                        <button class="pagination-btn">&lt;</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="table-footer__item text-right" colspan="2">13</td>
+                            <td class="table-footer__item text-right" colspan="2">223.100.400</td>
+                            <td class="table-footer__item text-right" colspan="2">32.000.100</td>
+                            <td class="table-footer__item text-right" colspan="2">190.100.300</td>
+                            <td class="table-footer__item text-right" colspan="2"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </div>
     </div>
 </body>

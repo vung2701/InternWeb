@@ -1,18 +1,18 @@
 /* Select box css */
 .select-box {
-    width: 220px;
+    min-width: 220px;
 }
+
 .select-box__header {
-    height: var(--height-default);
-    font-size: 14px;
-    outline: none;
-    border-radius: 2.5px;
-    border: 1px solid var(--border-color);
     padding: 10px 0 10px 14px;
+    cursor: pointer;
+}
+
+.select-box__header:hover {
+    border-color: var(--color-primary);
 }
 
 /* Selectbox has icon */
-.select-box__header.has-icon,
 .select-box__list.has-icon .select-box__item {
     padding-left: 38px;
 }
@@ -20,10 +20,16 @@
 
 /* Select list */
 .select-box__list {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     border-radius: 2.5px;
     padding: 4px 4px 4px 0;
-    box-shadow: inset 1px 2px 6px rgba(0, 0, 0, .2);
-    height: 180px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    max-height: 200px;
     overflow-y: auto;
 }
 
@@ -34,6 +40,10 @@
     border-radius: 2.5px;
 }
 
-.select-box__item:hover {
+.select-box__item:hover{
     background-color: var(--color-primary-blur);
+}
+
+.select-box__header:focus ~ .select-box__list {
+    display: block;
 }

@@ -1,0 +1,122 @@
+
+.table {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid var(--border-color); 
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
+    overflow-y: auto;
+}
+
+.table-header {
+    background-color: #f5f5f5;
+}
+
+.table-header__row, 
+.table-footer__row {
+    height: 38px;
+}
+
+.table-header__item {
+    font-weight: 700;
+    text-align: left;
+}
+
+.table-body__item {
+    height: 40px;
+}
+
+.table-body__row:hover {
+    background-color: rgba(26, 164, 200, .2);
+}
+
+.table-footer__item {
+    border-top: 1px solid var(--color-primary-light);
+}
+
+.table-footer__item:not(:first-child) {
+    font-weight: 700;
+}
+
+/* border giữa các hàng*/
+td,th {
+    border-top: 1px solid var(--color-primary-light);
+}
+
+
+/* Xử lý tbody scroll bằng tablelayout fixed và colspan */
+tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-body {
+    display: block;
+    max-height: calc(100% - 2 * 38px);
+    overflow-y: auto;
+}
+
+/* actions btn in table */
+.table-body__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-body__btn {
+    padding: 0 4px;
+}
+
+/* Xử lý checkbox in table */
+.table-checkbox {
+    width: 14px;
+    height: 14px;
+    margin-left: 16px;
+    margin-right: 20px;
+}
+
+.table .has-checkbox {
+    width: 50px;
+}
+
+/* table  left*/
+.table-footer__left {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+
+.total-notify {
+    width: 150px;
+    padding-left: 16px;
+}
+
+.total-btn {
+    height: 25px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 2.625px;
+    border: 1px solid #afafaf;
+    overflow: hidden;
+}
+
+.total-btn span {
+    flex: 1;;
+}
+
+.table-footer__left .pagination {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+

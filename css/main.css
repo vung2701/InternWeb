@@ -1,11 +1,13 @@
-@import url(./containers/input.css);
-@import url(./containers/button.css);
-@import url(./containers/icon.css);
-@import url(./containers/dropdown.css);
+@import url(./components/input.css);
+@import url(./components/button.css);
+@import url(./components/icon.css);
+@import url(./components/dropdown.css);
+@import url(./components/table.css);
+@import url(./components/pagination.css);
 
-@import url(../layouts/header.css);
-@import url(../layouts/sidebar.css);
-@import url(../layouts/container.css);
+@import url(./layouts/header.css);
+@import url(./layouts/sidebar.css);
+@import url(./layouts/container.css);
 
 /* Font chữ dùng trong trang web */
 @font-face {
@@ -45,7 +47,6 @@
     font-family: Misa Fonts2;
     font-size: 13px;
     line-height: 15px;
-    overflow: hidden;
 }
 
 a, a:hover {
@@ -63,12 +64,10 @@ button {
 
 /* Định nghĩa các biến chính*/
 :root {
-    --color-primary: #007AFF;
-    --color-primary-darkest:#003166;
-    --color-primary-dark: #004999;
-    --color-primary-light: #3395FF;
-    --color-primary-lightest: #66AFFF;
-    --color-primary-blur: #9fccfd;
+    --color-primary: #1aa4c8;
+    --color-primary-dark:#1c3048;
+    --color-primary-light: #1aa4c8;
+    --color-primary-blur: rgba(26, 164, 200, .2);
     --color-error: #E60000;
     --color-text: #001031;
     --border-color: #afafaf;
@@ -82,5 +81,21 @@ button {
 /* Common class */
 .relative {
     position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pl-8 {
+    padding-left: 8px;
 }
 

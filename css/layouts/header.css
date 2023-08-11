@@ -49,11 +49,11 @@
 
 .header-right__numeric-value {
     color: #000;
-    font-weight: 700px;
+    font-weight: 700;
     margin-left: 15px;
 }
 
-.up-down-icon {
+.up-down-btn {
     width: 7px;
     height: 13px;
     display: flex;
@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 17px;
+    cursor: pointer;
 }
 
 
@@ -69,9 +70,16 @@
     align-items: center;
 }
 
+.header-right__btn-group .btn{
+    box-shadow: none;
+}
+
 /* Xử lí icon btn cuối của header phải */
+.header-right__btn-group .btn-icon:not(:last-child) {
+    padding: 0 10px;
+}
 .header-right__btn-group .btn-icon:last-child {
-    padding-right: 0px;
+    padding-left: 8px;
 }
 
 .header-right__btn-group .btn-icon:last-child .down-icon {

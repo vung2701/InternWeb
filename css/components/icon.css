@@ -43,5 +43,11 @@
 	height: 5px;
 }
 
+.logo-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -20px -680px;
+	width: 36px;
+	height: 36px;
+}
+
 
 

@@ -1,0 +1,39 @@
+.container {
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100vh - var(--header-height));
+    margin-left: var(--sidebar-width);
+    background-color: #f4f7ff;
+}
+
+/* toolbar Css */
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px var(--space-default);
+}
+
+.toolbar-left,
+.toolbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-left__select {
+    margin-left: 11px;
+}
+
+.toolbar-right .btn-icon {
+    width: 36px;
+}
+
+.toolbar-right .btn + .btn {
+    margin-left: 10px;
+}
+
+/* Table */
+.table-container {
+    width: calc(100% - 2* var(--space-default));
+    height: calc(100% - var(--height-default) - 3 * 13px);
+    margin: 0 var(--space-default);
+}

@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--color-primary-darkest);
+    background-color: var(--color-primary-dark);
     width: 66px;
     height: 100vh;
     box-shadow: inset 0 3px 6px rgba(0, 0, 0, .16);
@@ -12,13 +12,8 @@
 }
 
 /* Logo */
-.logo__icon {
+#logo {
     margin: 11px 15px 4px 15px;
-    width: 36px;
-    height: 36px;
-    background-image: url(../assets/icon/QLTS-Icon-16x16.ico);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 /* Btn Icon Sidebar */
