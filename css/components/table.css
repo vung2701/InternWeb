@@ -1,3 +1,9 @@
+/* Table */
+.table-container {
+    width: calc(100% - 2* var(--space-default));
+    height: calc(100% - var(--height-default) - 3 * 13px);
+    margin: 0 var(--space-default);
+}
 
 .table {
     display: block;

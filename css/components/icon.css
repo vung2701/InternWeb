@@ -1,36 +1,33 @@
 .wrapper-icon {
-    width: 24px;
-    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-active {
+    display: none;
+}
+
 .left-icon {
     position: absolute;
-    top: 6px;
+    top: 50%;
     left: 7px;
+    transform: translateY(-50%);
 }
 
 .right-icon {
     position: absolute;
-    top: 6px;
+    top: 50%;
     right: 7px;
+    transform: translateY(-50%);
 }
 
 /* Các loại icon */
-.icon {
-    background: url(../../assets/icon/qlts-icon.svg) no-repeat -287px -23px;
-	width: 18px;
-	height: 18px;
-}
-
-.tv-icon {
-    background: url(../../assets/icon/qlts-icon.svg) no-repeat -21px -153px;
-	width: 22px;
-	height: 22px;
-}
-
 .up-icon {
     background: url(../../assets/icon/qlts-icon.svg) no-repeat -28px -338px;
 	width: 8px;
@@ -43,11 +40,171 @@
 	height: 5px;
 }
 
+/* Sibar icon */
 .logo-icon {
     background: url(../../assets/icon/qlts-icon.svg) no-repeat -20px -680px;
 	width: 36px;
 	height: 36px;
 }
 
+.tv-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -21px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.tv-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -22px -198px;
+	width: 20px;
+	height: 21px;
+}
+
+.car-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -65px -153px;
+	width: 22px;
+	height: 23px;
+}
+
+.car-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -65px -197px;
+	width: 22px;
+	height: 23px;
+}
+
+.road-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -110px -153px;
+	width: 21px;
+	height: 23px;
+}
+
+.road-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -110px -197px;
+	width: 21px;
+	height: 22px;
+}
+
+.paint-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -153px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.paint-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -153px -197px;
+	width: 22px;
+	height: 22px;
+}
+
+.book-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -197px -155px;
+	width: 22px;
+	height: 18px;
+}
+
+.book-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -198px -200px;
+	width: 20px;
+	height: 17px;
+}
+
+.search-light-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -241px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.search-light-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -240px -196px;
+	width: 23px;
+	height: 23px;
+}
+
+.char-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -329px -153px;
+	width: 22px;
+	height: 22px;
+}
+
+.char-icon-active {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -330px -198px;
+	width: 20px;
+	height: 20px;
+}
+
+/* Header icon */
+.ring-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -332px -109px;
+	width: 16px;
+	height: 20px;
+}
+
+.menu-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -199px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+.help-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -67px -67px;
+	width: 18px;
+	height: 18px;
+}
+
+.user-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -23px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+/* toolbar icon */
+.search-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -243px -23px;
+	width: 18px;
+	height: 18px;
+}
+
+.filter-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -243px -69px;
+	width: 17px;
+	height: 16px;
+}
+
+.multi-delete-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -287px -111px;
+	width: 18px;
+	height: 17px;
+}
+
+.trash-red-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -463px -111px;
+	width: 18px;
+	height: 18px;
+}
+
+/* table icon */
+.pencil-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -156px -68px;
+	width: 16px;
+	height: 16px;
+}
+
+.copy-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -244px -112px;
+	width: 16px;
+	height: 16px;
+}
+
+/* icon khac */
+.check-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -71px -512px;
+	width: 11px;
+	height: 8px;
+}
+
+.warning-icon {
+    background: url(../../assets/icon/qlts-icon.svg) no-repeat -416px -66px;
+	width: 24px;
+	height: 20px;
+}
 
 

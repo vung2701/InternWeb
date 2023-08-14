@@ -36,13 +36,21 @@
 }
 
 
-.sidebar__btn:hover {
-    opacity: 1;
-    background-color: var(--color-primary-dark);
-}
-
+.sidebar__btn:hover,
 .sidebar__btn:active,
 .sidebar__btn:focus {
     opacity: 1;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
+}
+
+/* show hide active icon */
+.sidebar__btn:hover  .icon-not-active,
+.sidebar__btn:active .icon-not-active,
+.sidebar__btn:focus .icon-not-active {
+    display: none;
+}
+.sidebar__btn:hover .icon-active,
+.sidebar__btn:active .icon-active,
+.sidebar__btn:focus .icon-active {
+    display: flex;
 }
