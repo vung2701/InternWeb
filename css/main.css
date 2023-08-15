@@ -1,13 +1,16 @@
 @import url(./components/input.css);
 @import url(./components/button.css);
 @import url(./components/icon.css);
-@import url(./components/dropdown.css);
 @import url(./components/table.css);
 @import url(./components/pagination.css);
+@import url(./components/dialog.css);
+@import url(./components/popup.css);
 
 @import url(./layouts/header.css);
 @import url(./layouts/sidebar.css);
 @import url(./layouts/container.css);
+
+@import url(./common.css);
 
 /* Font chữ dùng trong trang web */
 @font-face {
@@ -77,24 +80,23 @@ button {
     --space-default: 20px;
 }
 
-/* Common class */
-.relative {
-    position: relative;
+/* Scrollbar CSS */
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
 }
 
-.text-center {
-    text-align: center;
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
 }
 
-.text-left {
-    text-align: left;
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.06);
 }
 
-.text-right {
-    text-align: right;
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.06);
 }
-
-.pl-8 {
-    padding-left: 8px;
-}
-

@@ -1,0 +1,38 @@
+/* Common class */
+.relative {
+    position: relative;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-8 {
+    width: 66.6666%;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    display: none;
+}

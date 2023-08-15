@@ -20,12 +20,14 @@
             <div class="header-right">
                 <div class="header-right__text">Sở tài chính</div>
 
-                <div class="header-right__numeric">
+                <div class="header-right__numeric relative">
                     <label>Năm</label>
                     <span class="header-right__numeric-value">2014</span>
-                    <div class="up-down-btn">
-                        <div class="up-icon"></div>
-                        <div class="down-icon"></div>
+                    <div class="wrapper-icon right-icon">
+                        <div class="up-down-icon">
+                            <div class="up-icon"></div>
+                            <div class="down-icon"></div>
+                        </div>
                     </div>
                 </div>
                 
@@ -133,18 +135,18 @@
                 <!-- toolbar Left -->
                 <div class="toolbar-left">
                     <div class="toolbar-left__search relative">
-                        <input class="input has-icon" type="text" placeholder="Tìm kiếm tài sản">
+                        <input class="input has-left-icon" type="text" placeholder="Tìm kiếm tài sản">
                         <div class="wrapper-icon icon-24 left-icon">
                             <div class="search-icon"></div>
                         </div>
                     </div>
 
                     <div class="toolbar-left__select select-box relative">
-                        <div class="select-box__header input has-icon relative" tabindex="1">
+                        <div class="select-box__header input has-left-icon relative" tabindex="1">
                             <div class="wrapper-icon icon-24 left-icon">
                                 <div class="filter-icon"></div>
                             </div>
-                            Loại sản phẩm
+                            Loại tài sản
                             <div class="wrapper-icon icon-24 right-icon">
                                 <div class="down-icon"></div>
                             </div>
@@ -161,7 +163,7 @@
                     </div>
 
                     <div class="toolbar-left__select select-box relative">
-                        <div class="select-box__header input has-icon relative" tabindex="1">
+                        <div class="select-box__header input has-left-icon relative" tabindex="1">
                             <div class="wrapper-icon icon-24 left-icon">
                                 <div class="filter-icon"></div>
                             </div>
@@ -789,6 +791,128 @@
                 </table>
             </div>
         </div>
+
+        <!-- Absolute Element -->
+        <div class="popup">
+            <div class="popup-main">
+                <h4 class="popup-header">Sửa tài sản</h4>
+                <div class="popup-form">
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Mã tài sản <i>*</i></label>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="wrapper-input col-8 popup-item">
+                        <label for="">Tên tài sản <i>*</i></label>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Mã bộ phận sử dụng <i>*</i></label>
+                        <div class="select-box relative">
+                            <div class="select-box__header input relative" tabindex="1">
+                                HTCH
+                                <div class="wrapper-icon icon-24 right-icon">
+                                    <div class="down-icon"></div>
+                                </div>
+                            </div>
+    
+                            <ul class="select-box__list">
+                                <li class="select-box__item">
+                                    Laptop
+                                </li>
+                                <li class="select-box__item">
+                                    Tiền mặt
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-input col-8 popup-item">
+                        <label for="">Tên bộ phận sử dụng</label>
+                        <input class="input" type="text" disabled>
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Mã loại tài sản <i>*</i></label>
+                        <div class="select-box relative">
+                            <div class="select-box__header input relative" tabindex="1">
+                                MTXT
+                                <div class="wrapper-icon icon-24 right-icon">
+                                    <div class="down-icon"></div>
+                                </div>
+                            </div>
+    
+                            <ul class="select-box__list">
+                                <li class="select-box__item">
+                                    Laptop
+                                </li>
+                                <li class="select-box__item">
+                                    Tiền mặt
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrapper-input col-8 popup-item">
+                        <label for="">Tên loại tài sản</label>
+                        <input class="input" type="text" disabled>
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Số lượng <i>*</i></label>
+                        <div class="select-box relative">
+                            <div class="select-box__header input has-right-icon relative text-right" tabindex="1">
+                                1
+                                <div class="wrapper-icon icon-24 right-icon">
+                                    <div class="up-down-icon">
+                                        <div class="up-icon"></div>
+                                        <div class="down-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Nguyên giá <i>*</i></label>
+                        <input class="input text-right" type="text">
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Số năm sử dụng <i>*</i></label>
+                        <input class="input text-right" type="text">
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Tỷ lệ hao mòn (%) <i>*</i></label>
+                        <div class="select-box relative">
+                            <div class="select-box__header input has-right-icon relative text-right" tabindex="1">
+                                0.02
+                                <div class="wrapper-icon icon-24 right-icon">
+                                    <div class="up-down-icon">
+                                        <div class="up-icon"></div>
+                                        <div class="down-icon"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Giá trị hao mòn năm <i>*</i></label>
+                        <input class="input text-right" type="text">
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Năm theo dõi</label>
+                        <input class="input text-right" type="text" disabled>
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Ngày mua <i>*</i></label>
+                        <input class="input" type="date">
+                    </div>
+                    <div class="wrapper-input col-4 popup-item">
+                        <label for="">Ngày bắt đầu sử dụng <i>*</i></label>
+                        <input class="input" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn btn-sub">Hủy</div>
+                <div class="btn btn-main">Lưu</div>
+            </div>
+        </div>
+        <div class="overlay"></div>
     </div>
 </body>
 </html>

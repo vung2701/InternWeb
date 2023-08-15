@@ -6,11 +6,13 @@
     outline: none;
     border-radius: 2.5px;
     border: 1px solid var(--border-color);
-    padding: 10px 0 10px 12px;
+    padding: 10px 14px;
 }
+
 .input:disabled {
     opacity: 0.6;
     pointer-events: none;
+    background-color: #f5f5f5;
 }
 
 .input::placeholder {
@@ -37,8 +39,12 @@
 }
 
 /* Input has Icon */
-.input.has-icon {
+.input.has-left-icon {
     padding-left: 38px;
+}
+
+.input.has-right-icon {
+    padding-right: 38px;
 }
 
 /* Select box css */
@@ -51,7 +57,6 @@
     padding: 10px 0 10px 14px;
     cursor: pointer;
 }
-
 
 /* Selectbox has icon */
 .select-box__list.has-icon .select-box__item {
@@ -71,6 +76,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
     max-height: 200px;
     overflow-y: auto;
+    z-index: 3;
 }
 
 .select-box__item {
@@ -81,11 +87,26 @@
 }
 
 .select-box__item:hover{
-    background-color: var(--color-primary-blur);
+    background-color: var(--color-primary-light);
 }
 
 .select-box__header:focus ~ .select-box__list {
     display: block;
+}
+
+/* input in Wrapper */
+.wrapper-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-input label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.wrapper-input label i {
+    color: red;
 }
 
 

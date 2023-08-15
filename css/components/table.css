@@ -38,19 +38,10 @@
     background-color: rgba(26, 164, 200, .2);
 }
 
-.table-footer__item {
-    border-top: 1px solid var(--color-primary-light);
-}
-
-.table-footer__item:not(:first-child) {
-    font-weight: 700;
-}
-
 /* border giữa các hàng*/
 td,th {
     border-top: 1px solid var(--color-primary-light);
 }
-
 
 /* Xử lý tbody scroll bằng tablelayout fixed và colspan */
 tr {
@@ -88,7 +79,16 @@ tr {
     width: 50px;
 }
 
-/* table  left*/
+/* table footer*/
+
+.table-footer__item {
+    border-top: 1px solid var(--color-primary-light);
+}
+
+.table-footer__item:not(:first-child) {
+    font-weight: 700;
+}
+
 .table-footer__left {
     display: flex;
     align-items: center;
