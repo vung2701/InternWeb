@@ -20,7 +20,7 @@
             <div class="header-right">
                 <div class="header-right__text">Sở tài chính</div>
 
-                <div class="header-right__numeric relative">
+                <div class="header-right__numeric relative" tabindex="0">
                     <label>Năm</label>
                     <span class="header-right__numeric-value">2014</span>
                     <div class="wrapper-icon right-icon">
@@ -142,7 +142,7 @@
                     </div>
 
                     <div class="toolbar-left__select select-box relative">
-                        <div class="select-box__header input has-left-icon relative" tabindex="1">
+                        <div class="select-box__header input has-left-icon relative" tabindex="0">
                             <div class="wrapper-icon icon-24 left-icon">
                                 <div class="filter-icon"></div>
                             </div>
@@ -163,7 +163,7 @@
                     </div>
 
                     <div class="toolbar-left__select select-box relative">
-                        <div class="select-box__header input has-left-icon relative" tabindex="1">
+                        <div class="select-box__header input has-left-icon relative" tabindex="0">
                             <div class="wrapper-icon icon-24 left-icon">
                                 <div class="filter-icon"></div>
                             </div>
@@ -214,7 +214,7 @@
 
                 <!-- toolbar right -->
                 <div class="toolbar-right">
-                    <button class="btn btn-main has-icon">+ Thêm tài sản</button>
+                    <button id="addPopupBtn" class="btn btn-main has-icon">+ Thêm tài sản</button>
                     <button class="btn btn-icon">
                         <div class="wrapper-icon icon-24">
                             <div class="multi-delete-icon"></div>
@@ -793,23 +793,29 @@
         </div>
 
         <!-- Absolute Element -->
-        <div class="popup">
+        <!-- Popup -->
+        <div id="detailPopup" class="popup center">
             <div class="popup-main">
-                <h4 class="popup-header">Sửa tài sản</h4>
+                <h3 class="popup-header">Sửa tài sản</h3>
+                <div class="btn btn-icon not-effect btn-popup-close">
+                    <div class="wrapper-icon">
+                        <div class="close-icon"></div>
+                    </div>
+                </div>
                 <div class="popup-form">
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Mã tài sản <i>*</i></label>
-                        <input class="input" type="text">
+                        <label for="assetCode">Mã tài sản <i>*</i></label>
+                        <input id="assetCode" class="input" type="text" required>
                     </div>
                     <div class="wrapper-input col-8 popup-item">
-                        <label for="">Tên tài sản <i>*</i></label>
-                        <input class="input" type="text">
+                        <label for="assetName">Tên tài sản <i>*</i></label>
+                        <input id="assetName" class="input" type="text" required>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Mã bộ phận sử dụng <i>*</i></label>
-                        <div class="select-box relative">
-                            <div class="select-box__header input relative" tabindex="1">
-                                HTCH
+                        <label for="departmentCode">Mã bộ phận sử dụng <i>*</i></label>
+                        <div id="departmentCode" class="select-box relative">
+                            <div class="select-box__header input relative" tabindex="0">
+                                HCNS
                                 <div class="wrapper-icon icon-24 right-icon">
                                     <div class="down-icon"></div>
                                 </div>
@@ -827,12 +833,12 @@
                     </div>
                     <div class="wrapper-input col-8 popup-item">
                         <label for="">Tên bộ phận sử dụng</label>
-                        <input class="input" type="text" disabled>
+                        <input class="input" type="text" disabled value="Phòng hành chính nhân sự">
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Mã loại tài sản <i>*</i></label>
-                        <div class="select-box relative">
-                            <div class="select-box__header input relative" tabindex="1">
+                        <label for="assetType">Mã loại tài sản <i>*</i></label>
+                        <div id="assetType" class="select-box relative">
+                            <div class="select-box__header input relative" tabindex="0">
                                 MTXT
                                 <div class="wrapper-icon icon-24 right-icon">
                                     <div class="down-icon"></div>
@@ -851,12 +857,12 @@
                     </div>
                     <div class="wrapper-input col-8 popup-item">
                         <label for="">Tên loại tài sản</label>
-                        <input class="input" type="text" disabled>
+                        <input class="input" type="text" disabled value="Máy tính xách tay">
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Số lượng <i>*</i></label>
-                        <div class="select-box relative">
-                            <div class="select-box__header input has-right-icon relative text-right" tabindex="1">
+                        <label for="quantity">Số lượng <i>*</i></label>
+                        <div id="quantity" class="select-box relative">
+                            <div class="select-box__header input has-right-icon relative text-right" tabindex="0">
                                 1
                                 <div class="wrapper-icon icon-24 right-icon">
                                     <div class="up-down-icon">
@@ -868,17 +874,17 @@
                         </div>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Nguyên giá <i>*</i></label>
-                        <input class="input text-right" type="text">
+                        <label for="originCost">Nguyên giá <i>*</i></label>
+                        <input id="originCost" class="input text-right" type="text" required>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Số năm sử dụng <i>*</i></label>
-                        <input class="input text-right" type="text">
+                        <label for="yearUsage">Số năm sử dụng <i>*</i></label>
+                        <input id="yearUsage" class="input text-right" type="text" required>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Tỷ lệ hao mòn (%) <i>*</i></label>
-                        <div class="select-box relative">
-                            <div class="select-box__header input has-right-icon relative text-right" tabindex="1">
+                        <label for="depreciationRate">Tỷ lệ hao mòn (%) <i>*</i></label>
+                        <div id="depreciationRate" class="select-box relative">
+                            <div class="select-box__header input has-right-icon relative text-right" tabindex="0">
                                 0.02
                                 <div class="wrapper-icon icon-24 right-icon">
                                     <div class="up-down-icon">
@@ -890,29 +896,62 @@
                         </div>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Giá trị hao mòn năm <i>*</i></label>
-                        <input class="input text-right" type="text">
+                        <label for="yearDepreciationValue">Giá trị hao mòn năm <i>*</i></label>
+                        <input id="yearDepreciationValue" class="input text-right" type="text" required>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
                         <label for="">Năm theo dõi</label>
                         <input class="input text-right" type="text" disabled>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Ngày mua <i>*</i></label>
-                        <input class="input" type="date">
+                        <label for="buyDate">Ngày mua <i>*</i></label>
+                        <input class="input" type="date" required>
                     </div>
                     <div class="wrapper-input col-4 popup-item">
-                        <label for="">Ngày bắt đầu sử dụng <i>*</i></label>
-                        <input class="input" type="date">
+                        <label for="UseDate">Ngày bắt đầu sử dụng <i>*</i></label>
+                        <input class="input" type="date" required>
                     </div>
                 </div>
             </div>
             <div class="popup-footer">
-                <div class="btn btn-sub">Hủy</div>
-                <div class="btn btn-main">Lưu</div>
+                <button class="btn btn-outline cancel-popup-btn">Hủy</button>
+                <button class="btn btn-main save-popup-btn">Lưu</button>
             </div>
         </div>
-        <div class="overlay"></div>
+        <div class="overlay overlay-popup"></div>
+
+        <!-- Dialog -->
+        <div id="saveDialog" class="dialog center">
+            <div class="dialog-body">
+                <div class="wrapper-icon">
+                    <div class="warning-icon"></div>
+                </div>
+                <div class="dialog-text">
+                    Thông tin thay đổi sẽ không đươc thay đổi nếu bạn không lưu. Bạn có muốn lưu những thay đổi này?
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <div class="btn btn-outline cancel-dialog-btn">Hủy bỏ</div>
+                <div class="btn btn-sub not-save-dialog-btn">Không lưu</div>
+                <div class="btn btn-main save-dialog-btn">Lưu</div>
+            </div>
+        </div>
+        <div class="overlay overlay-dialog"></div>
+
+        <!-- Toast -->
+        <div class="toast-list">
+            
+        </div>
+        <div class="overlay overlay-loading"></div>
+
     </div>
+
+    <!-- nhúng thư viện JS trc -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- nhúng các file JS chung -->
+
+    <!-- nhúng các file js riêng chi từng page -->
+    <script src="../js/page/index.js"></script>
+
 </body>
 </html>

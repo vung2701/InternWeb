@@ -10,9 +10,9 @@
 }
 
 .input:disabled {
-    opacity: 0.6;
     pointer-events: none;
-    background-color: #f5f5f5;
+    background-color: var(--color-sub);
+    border-color: var(--border-color);
 }
 
 .input::placeholder {
@@ -21,7 +21,7 @@
 
 .input:hover,
 .input:focus {
-    background-color: #f5f5f5;
+    background-color: var(--color-sub);
     border-color: var(--color-primary);
 }
 
@@ -36,6 +36,7 @@
 
 .input.error {
     border-color: var(--color-error);
+    color: var(--color-error);
 }
 
 /* Input has Icon */

@@ -18,10 +18,11 @@
 
 /* Btn Icon Sidebar */
 .sidebar__btn-group {
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .sidebar__btn {
+    margin-top: 4px;
     opacity: .2;
     border-radius: 6px;
     width: 44px;
@@ -29,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 2px auto;
     overflow: hidden;
     background-color: transparent;
     border: none;

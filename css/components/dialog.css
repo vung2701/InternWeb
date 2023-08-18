@@ -1,0 +1,26 @@
+.dialog {
+    width: 420px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 3px rgba(0, 0, 0, .16);
+    z-index: 11;
+    display: none;
+}
+
+.dialog-body {
+    display: flex;
+    margin: 20px 0;
+}
+
+.dialog-text {
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 16px;
+}
+
+.dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

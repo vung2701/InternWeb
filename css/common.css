@@ -3,6 +3,13 @@
     position: relative;
 }
 
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .col-4 {
     width: 33.3333%;
 }
@@ -32,7 +39,16 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
+}
+
+.overlay-popup {
+    z-index: 5;
+}
+.overlay-dialog {
+    z-index: 10;
+}
+.overlay-loading {
+    z-index: 99;
 }

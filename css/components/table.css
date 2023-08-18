@@ -17,7 +17,7 @@
 }
 
 .table-header {
-    background-color: #f5f5f5;
+    background-color:var(--color-sub);
 }
 
 .table-header__row, 
@@ -80,7 +80,6 @@ tr {
 }
 
 /* table footer*/
-
 .table-footer__item {
     border-top: 1px solid var(--color-primary-light);
 }
@@ -107,8 +106,14 @@ tr {
     align-items: center;
     background-color: #ffffff;
     border-radius: 2.625px;
-    border: 1px solid #afafaf;
+    border: 1px solid var(--border-color);
     overflow: hidden;
+}
+
+.total-btn:hover,
+.total-btn:active,
+.total-btn:focus {
+    background-color: var(--color-primary-light);
 }
 
 .total-btn span {

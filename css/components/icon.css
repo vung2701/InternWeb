@@ -203,7 +203,7 @@
 	height: 16px;
 }
 
-/* icon khac */
+/* icon */
 .check-icon {
     background: url(../../assets/icon/qlts-icon.svg) no-repeat -71px -512px;
 	width: 11px;
@@ -214,6 +214,18 @@
     background: url(../../assets/icon/qlts-icon.svg) no-repeat -416px -66px;
 	width: 24px;
 	height: 20px;
+}
+
+.close-icon {
+	background: url(../../assets/icon/qlts-icon.svg) no-repeat -375px -287px;
+	width: 18px;
+	height: 18px;
+}
+
+.close-small-icon {
+	background: url(../../assets/icon/qlts-icon.svg) no-repeat -291px -247px;
+	width: 10px;
+	height: 10px;
 }
 
 

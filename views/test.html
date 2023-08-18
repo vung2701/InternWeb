@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <div>1.Popup</div>
-    <div class="popup">
+    <!-- popup -->
+    <div class="popup center">
         <div class="popup-main">
             <h4 class="popup-header">Sửa tài sản</h4>
+            <div class="btn btn-icon not-effect btn-close">
+                <div class="wrapper-icon">
+                    <div class="close-icon"></div>
+                </div>
+            </div>
             <div class="popup-form">
                 <div class="wrapper-input col-4 popup-item">
                     <label for="">Mã tài sản <i>*</i></label>
@@ -128,5 +133,44 @@
             <div class="btn btn-main">Lưu</div>
         </div>
     </div>
+    <!-- Dialog -->
+    <div class="dialog center">
+        <div class="dialog-body">
+            <div class="wrapper-icon">
+                <div class="warning-icon"></div>
+            </div>
+            <div class="dialog-text">
+                Thông tin thay đổi sẽ không đươc thay đổi nếu bạn không lưu. Bạn có muốn lưu những thay đổi này?
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <div class="btn btn-outline">Hủy bỏ</div>
+            <div class="btn btn-sub">Không lưu</div>
+            <div class="btn btn-main">Lưu</div>
+        </div>
+    </div>
+    <!-- Toast -->
+    <div class="toast-list">
+        <div class="toast-item toast--sucess">
+            <div class="toast-item__body">
+                <div class="wrapper-icon icon-24 toast-item__icon">
+                    <div class="check-icon"></div>
+                </div>
+                <div class="toast-text">Bạn đã lưu thành công</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- progress -->
+    <!-- <div class="loading-container center">
+        <div class="loading-spinner"></div>
+    </div> -->
+
+    <!-- nhúng thư viện JS trc -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- nhúng các file JS chung -->
+    
+    <!-- nhúng các file js riêng chi từng page -->
+    <script src="../js/page/index.js"></script>
 </body>
 </html>
